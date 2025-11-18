@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-manual
+spec:
+  nodeName: my-second-cluster-worker2  # Assign pod to a specific worker node
+  containers:
+    - name: nginx
+      image: nginx
